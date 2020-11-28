@@ -23,3 +23,5 @@ struct LearnWithKarthick: Website {
 
 // This will generate your website using the built-in Foundation theme:
 try LearnWithKarthick().publish(withTheme: .foundation)
+try LearnWithKarthick().publish(using: [.deploy(using: .gitHub("git@github.com:karthironald/LearnWithKarthick.git", useSSH: false))])
+
