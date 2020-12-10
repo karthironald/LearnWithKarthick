@@ -16,12 +16,11 @@ struct LearnWithKarthick: Website {
     // Update these properties to configure your website:
     var url = URL(string: "https://your-website-url.com")!
     var name = "Learn with Karthick"
-    var description = "I'm a professional iOS developer with 4+ years of experience. I would like to share my learning and findings with you all as blogs"
+    var description = "Let's learn together"
     var language: Language { .english }
-    var imagePath: Path? { Path("https://drive.google.com/file/d/1T6arRQczVgDkIL2mf43w6LHDs_1suNtz/view?usp=sharing") }
+    var imagePath: Path? { nil }
 }
 
 // This will generate your website using the built-in Foundation theme:
-try LearnWithKarthick().publish(withTheme: .foundation, deployedUsing: .gitHub("git@github.com:karthironald/LearnWithKarthick.git", useSSH: false))
-//try LearnWithKarthick().publish(using: [.deploy(using: .gitHub("git@github.com:karthironald/LearnWithKarthick.git", useSSH: false))])
+try LearnWithKarthick().publish(withTheme: .foundation)
 
