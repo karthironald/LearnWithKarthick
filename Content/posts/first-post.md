@@ -5,4 +5,4 @@ tags: first, article
 ---
 # My first post
 
-My first post's text.
+WidgetKit is the new framwork which has been released on WWDC 2020. I have a tried a widget in workout app and tested. It worked like charm.
